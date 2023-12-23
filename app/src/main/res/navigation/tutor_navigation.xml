@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tutor_navigation"
+    app:startDestination="@id/controlPanelFragment">
+
+    <fragment
+        android:id="@+id/studentListMyMeetingsFragment"
+        android:name="com.waterfall.wheresmytutor.activities.ListMyMeetingsFragment"
+        android:label="Meetings"
+        tools:layout="@layout/fragment_list_my_meetings">
+        <argument
+            android:name="@string/usertype_intent"
+            app:argType="string"
+            android:defaultValue="tutor" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/controlPanelFragment"
+        android:name="com.waterfall.wheresmytutor.activities.tutor.ControlPanelFragment"
+        android:label="Control Panel"
+        tools:layout="@layout/fragment_tutor_control_panel" />
+
+    <fragment
+        android:id="@+id/availabilityFragment"
+        android:name="com.waterfall.wheresmytutor.activities.tutor.AvailabilityFragment"
+        android:label="Availability"
+        tools:layout="@layout/fragment_tutor_availability" />
+
+</navigation>

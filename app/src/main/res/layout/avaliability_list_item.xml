@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="20dp"
+    android:paddingEnd="1dp"
+    android:paddingVertical="10dp"
+    android:layout_margin="4dp"
+    android:id="@+id/availabilityList"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/timeFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum_text"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="128dp"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/availabilityListItemMenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_more_options_icon_black"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:iconSize="20sp"
+        android:contentDescription="@string/more_options_content_desc"
+        />
+
+
+</RelativeLayout>

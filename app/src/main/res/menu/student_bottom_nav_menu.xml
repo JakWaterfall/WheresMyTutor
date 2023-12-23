@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/listMyTutorsFragment"
+        android:icon="@drawable/ic_person_icon"
+        android:title="@string/my_tutors_text" />
+
+    <item
+        android:id="@+id/listAllTutorsFragment"
+        android:icon="@drawable/ic_person_add_icon"
+        android:title="@string/all_tutors_text" />
+
+    <item
+        android:id="@+id/studentListMyMeetingsFragment"
+        android:icon="@drawable/ic_speech_bubble_icon"
+        android:title="@string/meeting_requests_text"
+        />
+
+</menu>

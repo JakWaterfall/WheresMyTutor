@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/available_status" android:id="@+id/availableMenuItem"/>
+    <item android:title="@string/busy_status" android:id="@+id/busyMenuItem"/>
+    <item android:title="@string/in_a_meeting_status" android:id="@+id/inAMeetingMenuItem"/>
+    <item android:title="@string/off_campus_status" android:id="@+id/offCampusMenuItem"/>
+    <item android:title="@string/in_a_session_status" android:id="@+id/inASessionMenuItem"/>
+</menu>

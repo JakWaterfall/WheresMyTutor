@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Where\'s My Tutor?</string>
+
+    // Text
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="first_name_text">First Name</string>
+    <string name="last_name_text">Last Name</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="forgot_my_password_text">Forgot My Password</string>
+    <string name="send_text">Send</string>
+    <string name="delete_text">Delete</string>
+    <string name="accept_text">Accept</string>
+    <string name="my_tutors_text">My Tutors</string>
+    <string name="all_tutors_text">All Tutors</string>
+    <string name="view_in_maps_text">View in Maps</string>
+    <string name="clear_text">Clear</string>
+    <string name="pick_a_date_for_the_meeting_text">Pick a date for the meeting</string>
+    <string name="message_optional_text">Message (Optional)</string>
+    <string name="days_of_the_week_text">Days of the week</string>
+    <string name="reason_text">Reason</string>
+    <string name="meeting_requests_text">Meetings</string>
+    <string name="set_location_text">Set Location</string>
+    <string name="decline_text">Decline</string>
+    <string name="foreground_location_service_channel_ID_text">ForegroundLocationServiceChannel</string>
+    <string name="foreground_location_service_channel_text">Foreground Location Service Channel</string>
+    <string name="broadcasting_your_location_text">Broadcasting Your Location</string>
+    <string name="meeting_point_text">Meeting Point</string>
+    <string name="remove_location_text">Remove Location</string>
+    <string name="no_address_found_text">No Location Found</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="restart_app_text">Restart App</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="close_app_text">Close App</string>
+    <string name="date_text">Date</string>
+    <string name="time_slot_text">Time Slot</string>
+    <string name="current_location_text">Current Location</string>
+    <string name="current_status_text">Current Status</string>
+    <string name="request_meeting_text">Request Meeting</string>
+    <string name="start_time_text">Start Time</string>
+    <string name="end_time_text">End Time</string>
+    <string name="location_text">Location</string>
+    <string name="status_text">Status</string>
+    <string name="lorem_ipsum_text">lorem ipsum</string>
+    <string name="week_day_text">Week Day</string>
+    <string name="broadcast_location_text">Broadcast Location</string>
+    <string name="availability_text">Availability</string>
+    <string name="home_text">Home</string>
+
+    // User Types
+    <string name="user_type_student">student</string>
+    <string name="user_type_tutor">tutor</string>
+    // Error Messages
+    <string name="first_name_required_error">First name required</string>
+    <string name="last_name_required_error">Last name required</string>
+    <string name="email_required_error">Email required</string>
+    <string name="valid_email_error">Must input valid email</string>
+    <string name="password_required_error">Password required</string>
+    <string name="confirm_password_required_error">Confirm Password required</string>
+    <string name="password_incorrect_length_error">Password must be at least 8 characters long</string>
+    <string name="confirm_password_match_error">Confirm Password must match Password</string>
+    <string name="reason_required_error">Reason Required</string>
+    <string name="date_required_error">Date Required</string>
+    <string name="time_slot_required_error">Time Slot Required</string>
+    <string name="no_internet_error">Where sorry but a internet connection is required to use this application, please reconnect to the internet to try again.</string>
+    <string name="database_error">Database error. Something went wrong</string>
+    //Dialogs
+    <string name="login_failed_dialog_title">Login Failed</string>
+    <string name="login_failed_dialog_desc">The credentials you entered did not match a user in the system. Please try again or press the Register button to make an account.</string>
+    <string name="email_not_ntu_domain_title">Email not from correct Domain</string>
+    <string name="email_not_ntu_domain_desc">This application is for NTU students and staff only. To register you must use your university email address.</string>
+    <string name="user_not_verified_title">User Not Verified</string>
+    <string name="user_not_verified_desc">You must prove you are a from the Nottingham Trent University by verifying your email address. Please check your emails to verify, it may be in the Junk mail box. \n\nWould you like us to send you another verification Link?</string>
+    <string name="location_permission_rejected_title">Location Permission Rejected</string>
+    <string name="location_permission_rejected_desc">Without locations permissions, the application cannot broadcast your location to your students. Please consider granting them to use this service.</string>
+    <string name="change_password_dialog_title">Change Password Link Sent!</string>
+    <string name="change_password_dialog_desc">Change Password link has been sent. Please check your Junk inbox.</string>
+    <string name="keep_current_location_dialog_title">Keep Current Location Set?</string>
+    <string name="keep_current_location_dialog_desc">Would you like to keep this location as your current location? Your students will still be able to find you here.</string>
+    // Statues
+    <string name="available_status">Available</string>
+    <string name="busy_status">Busy</string>
+    <string name="in_a_meeting_status">In a Meeting</string>
+    <string name="off_campus_status">Off Campus</string>
+    <string name="in_a_session_status">In a Session</string>
+    // Meeting Status
+    <string name="accepted_status">Accepted</string>
+    <string name="declined_status">Declined</string>
+    // Days of the week
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    // Arrays
+    <array name="days_of_week">
+        <item>@string/day_monday</item>
+        <item>@string/day_tuesday</item>
+        <item>@string/day_wednesday</item>
+        <item>@string/day_thursday</item>
+        <item>@string/day_friday</item>
+    </array>
+
+    //Intents
+    <string name="isastaticlocationquery_indent">isAStaticLocationQuery</string>
+    <string name="tutorid_intent">tutorId</string>
+    <string name="lat_intent">Lat</string>
+    <string name="long_intent">Long</string>
+    <string name="studentid_intent">studentId</string>
+    <string name="usertype_intent">usertype</string>
+    <string name="meetingid_intent">meetingId</string>
+    <string name="day_intent">Day</string>
+    <string name="fragmentid_intent">fragmentId</string>
+    <string name="for_meeting_point_intent">forMeetingPoint</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    // Content Description
+    <string name="add_button_content_desc">Add</string>
+    <string name="accept_button_content_desc">Accept</string>
+    <string name="logo_desc">Where\'s My Tutor Logo</string>
+    <string name="status_menu_content_desc">Status Menu</string>
+    <string name="more_options_content_desc">More Options</string>
+    <string name="add_or_remove_tutor_content_desc">Add or remove tutor</string>
+
+
+
+</resources>

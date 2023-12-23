@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.account.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wheresmytutor_nobackground"
+            android:contentDescription="@string/logo_desc"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestReasonTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginLogo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailForgotPassTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_text"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#A1887F"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passLoginTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requestReasonTxtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passLoginTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_text"
+                android:inputType="textPassword"
+                android:textColorHint="#A1887F"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_height="55dp"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/login_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passLoginTxtLayout" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/register_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+            app:layout_constraintWidth_max="320dp" />
+
+        <Button
+            android:id="@+id/forgotPassBtn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/forgot_my_password_text"
+            android:theme="@style/Theme.WheresMyTutor.TextButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

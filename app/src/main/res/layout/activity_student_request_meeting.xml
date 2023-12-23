@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.student.RequestMeetingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestReasonTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/requestReasonTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/reason_text"
+                android:inputType="textMultiLine"
+                android:textColorHint="#A1887F"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestMessageTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/requestReasonTxtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/requestMessageTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:gravity="start|top"
+                android:hint="@string/message_optional_text"
+                android:inputType="textMultiLine"
+                android:maxLines="12"
+                android:minLines="6"
+                android:textColorHint="#A1887F"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/requestMeetingDateTxtLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/timeSlotsLayout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requestMessageTxtLayout"
+            app:layout_constraintWidth_max="300dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/requestMeetingDateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:hint="@string/date_text"
+                android:inputType="none"
+                android:minLines="2"
+                android:textAlignment="center"
+                android:textColorHint="#A1887F"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    drop down timeslots -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/timeSlotsLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/requestMeetingDateTxtLayout"
+            app:layout_constraintTop_toBottomOf="@+id/requestMessageTxtLayout"
+            app:layout_constraintWidth_max="300dp">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/timeSlotsDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/time_slot_text"
+                android:inputType="none"
+                android:maxWidth="40dp"
+                android:minLines="2"
+                android:textAlignment="center"
+                android:textColorHint="#A1887F"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/sendMeetingRequestBtn"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/send_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/clearMeetingRequestBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requestMeetingDateTxtLayout" />
+
+        <Button
+            android:id="@+id/clearMeetingRequestBtn"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/clear_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sendMeetingRequestBtn"
+            app:layout_constraintTop_toBottomOf="@+id/requestMeetingDateTxtLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

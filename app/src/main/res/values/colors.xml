@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_pink">#FFE8005A</color>
+    <color name="secondary_pink">#FFFBEEF4</color>
+
+    <color name="primary_blue">#FF004877</color>
+
+    <color name="dark_font">#FF333333</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

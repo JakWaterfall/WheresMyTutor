@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewMeetingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetReasonTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetReasonTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/reason_text"
+                android:inputType="none"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetMessageTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewMeetReasonTxtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetMessageTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="20"
+                android:gravity="start|top"
+                android:hint="@string/message_optional_text"
+                android:inputType="none"
+                android:maxLines="12"
+                android:minLines="6"
+                android:textColorHint="#A1887F"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetDateTxtLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/viewMeetTimeSlotTxtLayout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetMessageTxtLayout"
+            app:layout_constraintWidth_max="350dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetDateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/date_text"
+                android:inputType="none"
+                android:textColorHint="#A1887F"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetTimeSlotTxtLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/viewMeetDateTxtLayout"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetMessageTxtLayout"
+            app:layout_constraintWidth_max="350dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetTimeSlotTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/time_slot_text"
+                android:textColorHint="#A1887F"
+                android:inputType="none"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetLocationTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetDateTxtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetLocationTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/location_text"
+                android:inputType="none"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMeetStatusTxtLayout"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="488dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetLocationTxtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/viewMeetStatusTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/status_text"
+                android:inputType="none"
+                android:textSize="23sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/viewMeetMapsBtn"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/view_in_maps_text"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetStatusTxtLayout" />
+
+        <Button
+            android:id="@+id/viewMeetSetLocationBtn"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/set_location_text"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetMapsBtn" />
+
+
+        <Button
+            android:id="@+id/acceptMeetBtn"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/accept_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/declineMeetBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetSetLocationBtn"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/declineMeetBtn"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="320dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/decline_text"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/acceptMeetBtn"
+            app:layout_constraintTop_toBottomOf="@+id/viewMeetSetLocationBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
